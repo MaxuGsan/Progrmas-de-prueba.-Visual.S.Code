@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <!-- ... (resto del código) ... -->
+</head>
+<body>
+    <h1>Lista de Tareas</h1>
+    <input type="text" id="taskInput" placeholder="Agregar nueva tarea">
+    <button onclick="addTask()">Agregar</button>
+    
+    <button onclick="showPendingTasks()">Tareas Pendientes</button>
+    <button onclick="showCompletedTasks()">Tareas Completadas</button>
+    
+    <div id="pendingTasksDiv" style="display: none;">
+        <h2>Tareas Pendientes</h2>
+        <ul id="pendingTasks">
+        </ul>
+    </div>
+    
+    <div id="completedTasksDiv" style="display: none;">
+        <h2>Tareas Completadas</h2>
+        <ul id="completedTasks">
+        </ul>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
